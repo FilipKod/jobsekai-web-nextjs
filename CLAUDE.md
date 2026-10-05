@@ -19,7 +19,7 @@ No test runner is configured yet.
 
 Early-stage Next.js 16 / React 19 app (scaffolded from `create-next-app`) using the App Router only — all routes live in `app/`. Styling is Tailwind CSS v4 via `@tailwindcss/postcss` (configured in `app/globals.css`, no `tailwind.config`). TypeScript is strict; the path alias `@/*` maps to the repo root.
 
-- `app/layout.tsx` — root layout; loads Geist fonts via `next/font/google` and uses the globally generated `LayoutProps<"/">` type (no import needed). Metadata is still the scaffold default.
-- `app/page.tsx` — home page (still the scaffold default).
+- `app/layout.tsx` — minimal root layout (no fonts, default metadata); uses the globally generated `LayoutProps<"/">` type (no import needed).
+- `app/page.tsx` — empty home page.
 
 Next 16 has breaking changes from earlier versions: consult `node_modules/next/dist/docs/01-app/` before writing Next-specific code (see AGENTS.md).
